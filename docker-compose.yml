@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-1234567890}
+      - POSTGRES_DB=rrb_prep
+    ports:
+      - '5432:5432'
+    volumes:
+      - rrb_pg:/var/lib/postgresql
+
+volumes:
+  rrb_pg:

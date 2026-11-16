@@ -1,0 +1,50 @@
+{
+    "name": "rrb-prep-backend",
+    "version": "1.0.0",
+    "description": "RRB Prep API (based on rajraiyani node-backend-boilerplate)",
+    "license": "ISC",
+    "author": "rajraiyani.com",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc && tsc-alias",
+        "start": "node dist/index.js",
+        "dev": "tsx src/index.ts",
+        "dev:watch": "tsx watch src/index.ts",
+        "lint": "eslint \"src/**/*.ts\"",
+        "lint:fix": "eslint src/**/*.ts --fix",
+        "format": "prettier --write src/**/*.ts",
+        "migrate": "dbmate up",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.39.2",
+        "@types/express": "^5.0.6",
+        "@types/morgan": "^1.9.10",
+        "@types/node": "^25.2.3",
+        "@types/pg": "^8.16.0",
+        "dbmate": "^2.30.0",
+        "eslint": "^9.39.2",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-perfectionist": "^5.5.0",
+        "globals": "^17.3.0",
+        "prettier": "^3.8.1",
+        "tsc-alias": "^1.9.10",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.55.0"
+    },
+    "dependencies": {
+        "cors": "^2.8.6",
+        "dotenv": "^17.3.1",
+        "express": "^5.2.1",
+        "jose": "^6.1.3",
+        "morgan": "^1.10.1",
+        "pg": "^8.18.0",
+        "qs": "^6.14.2",
+        "uuid": "^13.0.0",
+        "winston": "^3.19.0",
+        "winston-transport": "^4.9.0",
+        "zod": "^4.3.6"
+    }
+}
